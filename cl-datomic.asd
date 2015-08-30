@@ -16,10 +16,10 @@
   :description "CL Interface to Datomic: the Fully Transactional, Cloud-Ready, Distributed Database"
   :license "MIT"
   :serial t
-  :depends-on (:cl-edn
-               :trivial-types
-               :drakma
-               :cl-datalog)
+  :depends-on (:trivial-types
+               :cl-edn
+               :cl-datalog
+               :drakma)
   :components ((:file "packages")
                (:file "cl-datomic")))
 
