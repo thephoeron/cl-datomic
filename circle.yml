@@ -21,3 +21,9 @@ dependencies:
 test:
   override:
     - if [ "$CIRCLE_NODE_INDEX" = 0 ]; then COVERALLS=true run-prove cl-datomic-test.asd; else run-prove cl-datomic-test.asd; fi: {parallel: true}
+
+notify:
+  webhooks:
+    # A list of hook hashes, containing the url field
+    # gitter hook
+    - url: https://webhooks.gitter.im/e/03d8aa02aebacf3368aa
